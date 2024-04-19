@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+#parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+#container a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+#container a:hover {
+  color: #ea5d5d;
+  text-decoration: underline;
+}
+
+#body_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+
+#body_des {
+  text-align: center;
+}
+
+#body_des h2,
+#body_des h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+#body_des p {
+  margin-top: 10px;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Background lines */
+body::before,
+/*body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::before {
+  background: repeating-linear-gradient(
+    0deg,
+    #f8f8f8,
+    #f8f8f8 5px,
+    #e8e8e8 5px,
+    #e8e8e8 10px
+  );
+}
+
+body::after {
+  background: repeating-linear-gradient(
+    90deg,
+    #f8f8f8,
+    #f8f8f8 5px,
+    #e8e8e8 5px,
+    #e8e8e8 10px
+  );
+}
+*/
+#name_style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+}
+
+#name_image img {
+  height: auto;
+  width: 10%;
+  margin-top: 5%;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#home_body{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#home_des img{
+  height:auto;
+  width: 350px;
+}
+#home_part img{
+  height:auto;
+  width: 700px;
+}
+#name {
+  margin-left: -150px;
+}
+
+#h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+#name_des {
+  font-size: 12px;
+  margin-top: -10px;
+  color: #777;
+}
+
+#h2_font {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+#h3_font {
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  color: #ea5d5d;
+}
+
+#span_color {
+  color: #ea5d5d;
+}
+#fresh_dishes {
+  text-align: center;
+  margin: 50px 0;
+  background-color: #f8f8f8; 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#fresh_dishes h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin: 0;
+  color: #333; 
+}
+
+#fresh_dishes p {
+  margin-top: 10px;
+  color: #555;
+}
+
+#order_now_button {
+  background-color: #ea5d5d;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+#order_now_button:hover {
+  background-color: #c14444;
+}
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background-color:darkgrey;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #ea5d5d;
+}
+
+.footer-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+  color: #ea5d5d;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons a {
+  margin-right: 20px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-icons a:hover {
+  color: #ea5d5d;
+}
+

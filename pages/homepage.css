@@ -1,0 +1,21 @@
+/*img {
+  position: absolute;
+  margin-top: 0%;
+  left: 2%;
+}*/
+/*#container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}*/
+h2 {
+  font-style: oblique;
+  margin-top: 5%;
+}
+#hello {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer {
+  border: 1px solid grey;
+  background-color: green;
+}
